@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Morreale Portfolio </title>
+        <link href="./css/styles.css" type="text/css" rel="stylesheet" />
+        <link href="./css/media.css" type="text/css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div class="title-block">
+                <h1>Morreale Animations</h1>
+            </div>
+            <div class="nav-wrap">
+                <div class="nav-title">
+                    <h1>Portfolio</h1>
+                </div>
+                <div class= "navbar-wrap">
+                    <div class="navbar" id="nav1">
+                        <ul>
+                            <li>
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hidden-navbar" id="nav2">
+                        <ul>
+                            <li>
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="reel-wrap">
+            <div class="reel">
+                <h2>Demo Reel</h2>
+                <p>-----------------------------------instert description here------------------------------</p>
+                <div class="video-block">
+                    <video controls></video>
+                </div>
+            </div>
+        </div>
+        <div class="drawings">
+            <h2>Drawings</h2>
+            <ul>
+                <li>
+                    <a href="#">Geometrics</a>
+                </li>
+                <li>
+                    <a href="#">anime</a>
+                </li>
+                <li>
+                    <a href="#">more</a>
+                </li>   
+            </ul>
+        </div>
+        <div class="reel">
+            <h2>Story Board</h2>
+            <div class="video-block">
+                <video controls></video>
+            </div>
+        </div>
+        <footer>
+            <div class="foot">
+                <p> Like this website? See more at 
+                    <a href="#">Thomas Grasso Pages</a>
+                </p>
+            </div>
+        </footer>
+    </body>
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        function myFunction() {
+            if (document.body.scrollTop > 107 || document.documentElement.scrollTop > 107) {
+
+                document.getElementById("nav2").style.display = "flex";
+                document.getElementById("nav1").style.display = "none";
+
+            } else {
+                document.getElementById("nav2").style.display = "none";
+                document.getElementById("nav1").style.display = "flex";
+    }
+}
+    </script>
+</html>
